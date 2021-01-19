@@ -4,10 +4,10 @@ var username=readlinesync.question(chalk.bold.green
 ("What's your name? " ));
 console.log("Hi!! "+chalk.italic(username));
 var score =0;
-var b=true;
+var b=false;
 var know=readlinesync.question("Do you know Ruchika? ");
-if(know.toUpperCase()==='NO')
-b=false;
+if(know.toUpperCase()==='YES')
+b=true;
 function play( quest, ans)
 {
 var useranswer=readlinesync.question(quest);
@@ -17,10 +17,7 @@ console.log("Yeah:) You're correct")
 score++;
 }
 else
-{
-console.log("ohhh"+":("+" You're wrong")
-score--;
-}
+console.log("ohhh"+":("+" You're wrong");
 
 }
 
